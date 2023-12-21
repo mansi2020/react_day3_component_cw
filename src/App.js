@@ -4,7 +4,9 @@ import Header from './Component/Header/Header'
 import Hero from './Component/Hero/Hero'
 import Card from './Component/Card/Card';
 import Grid from './Component/Grid/Reviews';
-import Footer from './Component/Footer/Footer'
+import Footer from './Component/Footer/Footer';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   return (

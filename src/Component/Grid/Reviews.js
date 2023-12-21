@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import "./reviews.css";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Reviews = () => {
+    useEffect(()=>{
+      Aos.init({duration:500});
+    },[]);
   return (
     <div className="reviewMain">
       <div className="reviewContainer">
         {/* card 1 */}
-        <div className="reviewCard">
+        <div className="reviewCard" data-aos="flip-right">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             minima dicta amet, molestiae aliquam incidunt suscipit recusandae
@@ -28,7 +33,7 @@ const Reviews = () => {
         </div>
 
         {/* card 2 */}
-        <div className="reviewCard">
+        <div className="reviewCard" data-aos="flip-right">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             minima dicta amet, molestiae aliquam incidunt suscipit recusandae
@@ -49,7 +54,7 @@ const Reviews = () => {
         </div>
 
         {/* card 3 */}
-        <div className="reviewCard">
+        <div className="reviewCard" data-aos="flip-right">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             minima dicta amet, molestiae aliquam incidunt suscipit recusandae
@@ -69,7 +74,7 @@ const Reviews = () => {
         </div>
 
         {/* card 4 */}
-        <div className="reviewCard">
+        <div className="reviewCard" data-aos="flip-right">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             minima dicta amet, molestiae aliquam incidunt suscipit recusandae
@@ -89,7 +94,7 @@ const Reviews = () => {
         </div>
 
         {/* card 5 */}
-        <div className="reviewCard">
+        <div className="reviewCard" data-aos="flip-right">
           <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus doloribus eius aut unde, dolores accusantium!
           </p>
@@ -106,7 +111,7 @@ const Reviews = () => {
         </div>
 
         {/* card 6 */}
-        <div className="reviewCard">
+        <div className="reviewCard" data-aos="flip-right">
           <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ut necessitatibus, repudiandae qui dolor minima.
           </p>
